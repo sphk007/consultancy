@@ -8,11 +8,11 @@ const Item = (props) => {
       <div className="p-4 flex-grow">
         <div className="flex flex-col h-full justify-between">
           <p className="text-gray-600 mb-2">{props.name}</p>
-          <Link to={`/preform`}>
+          {/* <Link to={`/preform`}>
             <button className="block w-full px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
               CLICK TO VIEW
             </button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
