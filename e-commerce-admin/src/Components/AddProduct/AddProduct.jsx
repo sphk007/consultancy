@@ -29,7 +29,7 @@ const AddProduct = () => {
       const formData = new FormData();
       formData.append("product", image);
 
-      const response = await fetch("http://localhost:4000/upload", {
+      const response = await fetch("https://consultancy-backend.onrender.com/upload", {
         method: "POST",
         body: formData,
       });
@@ -41,7 +41,7 @@ const AddProduct = () => {
           image: data.image_url,
         };
         
-        await fetch("http://localhost:4000/addproduct", {
+        await fetch("https://consultancy-backend.onrender.com/addproduct", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
